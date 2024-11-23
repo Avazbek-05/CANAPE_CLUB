@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CANAPE-CLUB</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="icon" href="./svg/logo.svg" />
+  </head>
+  <body>
+    <header class="header bg-[#ededed] max-[1245px]:bg-transparent">
+      <div class="container1">
+        <input type="checkbox" id="check" class="hidden" />
+        <div class="nav flex items-center justify-between h-10">
+          <label
+            for="check"
+            class="hidden max-[1245px]:block text-[25px] absolute top-5 right-5"
+            ><i class="fa-solid fa-xmark"></i
+          ></label>
+
+          <nav>
+            <ul class="nav-ul flex items-center gap-4">
+              <li
+                class="text-[#6f6f6f] text-[12px] font-[600] max-[1245px]:text-[#000] max-[1245px]:text-[16px]"
+              >
+                <a href="#">Для юридических лиц</a>
+              </li>
+              <li
+                class="text-[#6f6f6f] text-[14px] font-[600] max-[1245px]:text-[#000] max-[1245px]:text-[16px]"
+              >
+                <a href="#">О компании</a>
+              </li>
+              <li
+                class="text-[#6f6f6f] text-[14px] font-[600] max-[1245px]:text-[#000] max-[1245px]:text-[16px]"
+              >
+                <a href="#">Оплата и доставка</a>
+              </li>
+              <li
+                class="text-[#6f6f6f] text-[14px] font-[600] max-[1245px]:text-[#000] max-[1245px]:text-[16px]"
+              >
+                <a href="#">Акции и бонусные баллы</a>
+              </li>
+              <li
+                class="text-[#6f6f6f] text-[14px] font-[600] max-[1245px]:text-[#000] max-[1245px]:text-[16px]"
+              >
+                <a href="#">Для юридических лиц</a>
+              </li>
+              <li
+                class="text-[#6f6f6f] text-[14px] font-[600] hidden max-[1245px]:block max-[1245px]:text-[#000] max-[1245px]:text-[16px]"
+              >
+                <a href="#">Блог</a>
+              </li>
+              <li
+                class="text-[#6f6f6f] text-[14px] font-[600] hidden max-[1245px]:block max-[1245px]:text-[#000] max-[1245px]:text-[16px]"
+              >
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="btns flex items-center gap-4">
+            <div
+              class="flex items-center gap-2 max-[1245px]:flex-col text-[12px] font-[500] max-[1245px]:text-[#000] max-[1245px]:text-[16px]"
+            >
+              <a href="tel:+7 909 993 89 70">+7 909 993 89 70</a>
+              <a href="tel:+7 495 120-21-50">+7 495 120-21-50</a>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <a href="#"><img src="./svg/ WhatsApp.svg" alt="" /></a>
+              <a href="#"><img src="./svg/ Telegram.svg" alt="" /></a>
+              <a href="#"><img src="./svg/ phone.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <div class="m-[8px_0_24px_0]">
+      <div class="container1">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-6 max-[400px]:gap-4">
+            <img src="./svg/logo.svg" alt="" />
+            <button
+              class="bg-[#f17e00] p-[12px_28px] rounded-[12px] text-[16px] font-[600] text-[#fff] max-[420px]:hidden"
+            >
+              Каталог
+            </button>
+            <div class="text-[12px] font-[800] text-[#111] max-[1119px]:hidden">
+              <h3>Пн-Пт <span class="font-[500]">08:00-20:00</span></h3>
+              <h3>Сб-Вс <span class="font-[500]">09:00-19:00</span></h3>
+            </div>
+          </div>
+          <div
+            class="bg-[#ededed] flex w-[40%] justify-between p-[5px_20px] rounded-[8px] max-[400px]:w-[70%]"
+          >
+            <input
+              class="bg-transparent w-full outline-none"
+              type="search"
+              placeholder="Искать товары"
+            />
+            <img src="./svg/ search.svg" alt="" />
+          </div>
+          <div class="flex items-center gap-6 max-[520px]:hidden">
+            <img class="" src="./svg/ basket.svg" alt="" />
+            <img class="max-[650px]:hidden" src="./svg/ like.svg" alt="" />
+            <img class="" src="./svg/ profile.svg" alt="" />
+          </div>
+          <label class="hidden max-[1225px]:block" for="check"
+            ><i class="fa-solid fa-bars text-[25px]"></i
+          ></label>
+        </div>
+      </div>
+    </div>
+    <!-- header logo end -->
+    <hr />
+    <div class="container1 p-[24px_0_4px_0]">
+      <div class="overflow-auto">
+        <div
+          class="text flex items-center justify-between text-[#111] gap-3 text-[16px] font-[800] max-[1134px]:w-[1045px]"
+        >
+          <h2>Фуршетные наборы</h2>
+          <h2>Хиты</h2>
+          <h2>Скидки</h2>
+          <h2>Готовые решения</h2>
+          <h2>Новинки</h2>
+          <h2>Кухни мира</h2>
+          <h2>Кейтеринг</h2>
+          <h2>Доставка домашней еды</h2>
+        </div>
+      </div>
+      <div class="flex items-center gap-2 pt-[24px] max-[540px]:justify-center">
+        <p class="text-[#75c94d] text-[14px] font-[400]">Главная</p>
+        <i
+          class="fa-solid fa-chevron-right w-[10px] h-[10px] text-[#DDDDDD]"
+        ></i>
+        <p class="text-[#6f6f6f] font-[400] text-[14px]">Фуршетные наборы</p>
+      </div>
+    </div>
+
+    <!-- Фуршетные наборы -->
+    <div class="container1">
+      <h1
+        class="title text-[38px] my-[30px] font-[700] max-[455px]:text-[25px] max-[445px]:font-[500] max-[600px]:text-center w-fit"
+      >
+        Фуршетные наборы
+      </h1>
+      <div class="swiper w-[100%]">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div
+              class="flex flex-col justify-center items-center rounded-[20px] gap-[17px] border border-solid border-[#f17e00]"
+            >
+              <img class="w-full" src="./img/Канапе.png" alt="" />
+              <h2 class="pb-[20px] text-[16px] dont-[600] text-[#111]">
+                Канапе
+              </h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="flex flex-col justify-center items-center rounded-[20px] gap-[17px] border border-solid border-[#f17e00]"
+            >
+              <img class="w-full" src="./img/Тарталетки.png" alt="" />
+              <h2 class="pb-[20px] text-[16px] dont-[600] text-[#111]">
+                Тарталетки
+              </h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="flex flex-col justify-center items-center rounded-[20px] gap-[17px] border border-solid border-[#f17e00]"
+            >
+              <img class="w-full" src="./img/Рулетики.png" alt="" />
+              <h2 class="pb-[20px] text-[16px] dont-[600] text-[#111]">
+                Рулетики
+              </h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="flex flex-col justify-center items-center rounded-[20px] gap-[17px] border border-solid border-[#f17e00]"
+            >
+              <img class="w-full" src="./img/Мини-бургеры.png" alt="" />
+              <h2 class="pb-[20px] text-[16px] dont-[600] text-[#111]">
+                Мини-бургеры
+              </h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="flex flex-col justify-center items-center rounded-[20px] gap-[17px] border border-solid border-[#f17e00]"
+            >
+              <img class="w-full" src="./img//Сэндвичи,.png" alt="" />
+              <h2 class="pb-[20px] text-[16px] dont-[600] text-[#111]">
+                Сэндвичи
+              </h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="flex flex-col justify-center items-center rounded-[20px] gap-[17px] border border-solid border-[#f17e00]"
+            >
+              <img class="w-full" src="./img/Фуршет  .png" alt="" />
+              <h2 class="pb-[20px] text-[16px] dont-[600] text-[#111]">
+                Фуршет
+              </h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="flex flex-col justify-center items-center rounded-[20px] gap-[17px] border border-solid border-[#f17e00]"
+            >
+              <img class="w-full" src="./img/Горячие .png" alt="" />
+              <h2 class="pb-[20px] text-[16px] dont-[600] text-[#111]">
+                Горячие
+              </h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="flex flex-col justify-center items-center rounded-[20px] gap-[17px] border border-solid border-[#f17e00]"
+            >
+              <img class="w-full" src="./img/Мини-бургеры.png" alt="" />
+              <h2 class="pb-[20px] text-[16px] dont-[600] text-[#111]">
+                Фуршет
+              </h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="flex flex-col justify-center items-center rounded-[20px] gap-[17px] border border-solid border-[#f17e00]"
+            >
+              <img class="w-full" src="./img/Канапе.png" alt="" />
+              <h2 class="pb-[20px] text-[16px] dont-[600] text-[#111]">
+                Канапе
+              </h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="flex flex-col justify-center items-center rounded-[20px] gap-[17px] border border-solid border-[#f17e00]"
+            >
+              <img class="w-full" src="./img/Тарталетки.png" alt="" />
+              <h2 class="pb-[20px] text-[16px] dont-[600] text-[#111]">
+                Тарталетки
+              </h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="flex flex-col justify-center items-center rounded-[20px] gap-[17px] border border-solid border-[#f17e00]"
+            >
+              <img class="w-full" src="./img/Мини-бургеры.png" alt="" />
+              <h2 class="pb-[20px] text-[16px] dont-[600] text-[#111]">
+                Мини-бургеры
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <!-- Фуршетные наборы end  -->
+
+    <div class="container1 pt-[30px] flex gap-7 mt-[30px]">
+      <div class="overflow-y-auto">
+        <div class="w-[300px] p-[10px] max-[1000px]:hidden max-[800px]:max-h-[1000px]">
+          <div class="flex items-center gap-[25px]">
+            <i class="fa-solid fa-chevron-down text-[17px]"></i>
+            <h2 class="text-[19px] font-[400] text-[#111]">Цена</h2>
+          </div>
+          <div class="flex items-center gap-4 mt-[30px]">
+            <button
+              class="p-[11px_73px_11px_16px] border border-solid border-[#e5e5e5] rounded-[8px] text-[14px] font-[400]"
+            >
+              От
+            </button>
+            <button
+              class="p-[11px_73px_11px_16px] border border-solid border-[#e5e5e5] rounded-[8px] text-[14px] font-[400]"
+            >
+              До
+            </button>
+          </div>
+          <img
+            class="m-[21px_0_38px_0] w-full"
+            src="./img/line.png"
+            alt="line"
+          />
+          <hr />
+          <div class="flex items-center gap-[25px] py-[15px]">
+            <i class="fa-solid fa-chevron-down text-[17px]"></i>
+            <h2 class="text-[19px] font-[400] text-[#111]">Тип</h2>
+          </div>
+          <hr />
+
+          <div class="mt-[16.41px] pl-[40px] flex flex-col gap-4">
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/1.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Акции
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/2.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Готовые сеты
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/3.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Канапе
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/4.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Мини-бургеры
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/5.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Тарталетки
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/6.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Пирожки
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/7.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Рулетики
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/2.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Десерты
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/3.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Японские сеты роллов
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/4.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Холодные закуски
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/1.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Нарезки
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/7.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Наборы сыров
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/3.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Горячие закуски
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/5.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Закуски и салаты
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/6.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Салаты
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/2.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Овощи и фрукты
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/1.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Сэндвичи, брускетты
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/5.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Шашлык
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/2.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Блины
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/7.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Веррины
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/6.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Напитки
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/2.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Дегустационные наборы
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/3.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Постное меню
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/2.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Десерты
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/8.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Украшение шарами
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img class="w-[22px] h-[22px]" src="./svg/9.svg" alt="" />
+              <p class="text-[13px] font-[400] text-[#888] hover:text-[#111]">
+                Пицца
+              </p>
+            </div>
+          </div>
+          <!-- endddddd -->
+        </div>
+      </div>
+
+      <div class="w-full p-[10px]">
+        <div class="flex items-center justify-between max-[460px]:hidden">
+          <div
+            class="flex items-center gap-6 text-[16px] font-[400] text-[#888] max-[1077px]:grid max-[1077px]:grid-cols-2"
+          >
+            <h2 class="hover:font-[400] hover:text-[#000]">по популярности</h2>
+            <h2 class="hover:font-[400] hover:text-[#000]">цена по убыванию</h2>
+            <h2 class="hover:font-[400] hover:text-[#000]">
+              цена по возрастанию
+            </h2>
+          </div>
+          <select
+            class="rounded-[8px] p-[2px_10px] border border-solid border-[#6f6f6f]"
+          >
+            <option value="34" selected>36</option>
+            <option value="34">34</option>
+            <option value="34">35</option>
+            <option value="34">98</option>
+            <option value="34">21</option>
+            <option value="34">12</option>
+            <option value="34">34</option>
+          </select>
+        </div>
+        <div class="flex items-center justify-between mt-[15px]">
+          <div
+            class="flex items-center gap-[12px] max-[1218px]:grid max-[1218px]:grid-cols-3 max-[603px]:grid-cols-2 max-[1000px]:m-auto max-[406px]:grid-cols-1 max-[406px]:w-full"
+          >
+            <div
+              class="flex items-center gap-2 rounded-[20px] p-[7px_12px] border border-solid border-[#f2830a]"
+            >
+              <img class="w-[22px] h-[22px]" src="./svg/Все блюда.svg" alt="" />
+              <p class="text-[16px] font-[400] text-[#6f6f6f]">Все блюда</p>
+            </div>
+            <div
+              class="flex items-center gap-2 rounded-[20px] p-[7px_12px] border border-solid border-[#f2830a]"
+            >
+              <img class="w-[22px] h-[22px]" src="./svg/Роллы.svg" alt="" />
+              <p class="text-[16px] font-[400] text-[#6f6f6f]">Роллы</p>
+            </div>
+
+            <div
+              class="flex items-center gap-2 rounded-[20px] p-[7px_12px] border border-solid border-[#f2830a]"
+            >
+              <img class="w-[22px] h-[22px]" src="./svg/Суши.svg" alt="" />
+              <p class="text-[16px] font-[400] text-[#6f6f6f]">Суши</p>
+            </div>
+            <div
+              class="flex items-center gap-2 rounded-[20px] p-[7px_12px] border border-solid border-[#f2830a]"
+            >
+              <img class="w-[22px] h-[22px]" src="./svg/Сашими.svg" alt="" />
+              <p class="text-[16px] font-[400] text-[#6f6f6f]">Сашими</p>
+            </div>
+            <div
+              class="flex items-center gap-2 rounded-[20px] p-[7px_12px] border border-solid border-[#f2830a]"
+            >
+              <img
+                class="w-[22px] h-[22px]"
+                src="./svg/Морепродукты.svg"
+                alt=""
+              />
+              <p class="text-[16px] font-[400] text-[#6f6f6f]">Морепродукты</p>
+            </div>
+          </div>
+          <h2
+            class="text-[#f17e00] text-[16px] font-[400] border border-l-0 border-t-0 border-r-0 border-dashed border-[#f2830a] max-[1315px]:hidden"
+          >
+            Показать
+          </h2>
+        </div>
+
+        <!-- Суши card start -->
+
+        <div
+          class="grid grid-cols-3 gap-[20px] mt-[25px] max-[1220px]:grid-cols-2 max-[610px]:grid-cols-1"
+        >
+          <!-- 1 -->
+          <div class="bg-[#efecec] rounded-[20px] relative">
+            <img class="w-full" src="./img/Суши-1.png" alt="" />
+
+            <div class="flex flex-col absolute top-[14px] right-[15px] gap-3">
+              <img class="w-[41px] h-[41px]" src="./svg/new.svg" alt="" />
+              <img class="w-[41px] h-[41px]" src="./svg/new-2.svg" alt="" />
+            </div>
+            <div class="flex items-center justify-between p-[12px_14px]">
+              <div class="flex gap-5 items-end">
+                <h2 class="text-[24px] font-[700]">6 490 ₽</h2>
+                <p class="line-through text-[#6f6f6f] text-[14px] font-[700]">
+                  7 390 ₽
+                </p>
+              </div>
+              <img src="./svg/likii-1.svg" alt="" />
+            </div>
+            <div class="p-[14px_14px_4px_14px]">
+              <h3 class="text-[16px] font-[600] text-[#111] max-w-[140px]">
+                День Рождения на 5-10 персон
+              </h3>
+              <p
+                class="text-[12px] font-[400] text-[#6f6f6f] max-w-[180px] pt-[5px]"
+              >
+                Отличное готовое решение для Вашего дня рождения, ...
+              </p>
+            </div>
+            <div class="p-[15px_14px_10px_14px]">
+              <div class="flex items-center justify-between">
+                <p>Вес: <span>1095 г</span></p>
+                <button
+                  class="flex items-center p-[3px_5px] rounded-[20px] gap-[6px] border border-solid border-[#f17e00]"
+                >
+                  <p class="text-[12px] font-[400] text-[#6f6f6f]">1 шт</p>
+                  <img src="./svg/icon---.svg" alt="" />
+                </button>
+              </div>
+              <button
+                class="btn w-full p-[12px_0] bg-[#f17e00] rounded-[20px] mt-[10px] text-[16px] font-[400] text-[#fff] hover:bg-[silver] hover:scale-105 hover:text-[#000] hover:font-[700]"
+              >
+                Добавить в корзину
+              </button>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="bg-[#efecec] rounded-[20px] relative">
+            <img class="w-full" src="./img/Суши-2.png" alt="" />
+
+            <div class="flex flex-col absolute top-[14px] right-[15px] gap-3">
+              <img class="w-[41px] h-[41px]" src="./svg/new-3.svg" alt="" />
+              <img class="w-[41px] h-[41px]" src="./svg/new-2.svg" alt="" />
+            </div>
+            <div class="flex items-center justify-between p-[12px_14px]">
+              <div class="flex gap-5 items-end">
+                <h2 class="text-[24px] font-[700]">6 490 ₽</h2>
+                <p class="line-through text-[#6f6f6f] text-[14px] font-[700]">
+                  7 390 ₽
+                </p>
+              </div>
+              <img src="./svg/likii-1.svg" alt="" />
+            </div>
+            <div class="p-[14px_14px_4px_14px]">
+              <h3 class="text-[16px] font-[600] text-[#111] max-w-[140px]">
+                День Рождения на 5-10 персон
+              </h3>
+              <p
+                class="text-[12px] font-[400] text-[#6f6f6f] max-w-[180px] pt-[5px]"
+              >
+                Отличное готовое решение для Вашего дня рождения, ...
+              </p>
+            </div>
+            <div class="p-[15px_14px_10px_14px]">
+              <div class="flex items-center justify-between">
+                <p>Вес: <span>1095 г</span></p>
+                <button
+                  class="flex items-center p-[3px_5px] rounded-[20px] gap-[6px] border border-solid border-[#f17e00]"
+                >
+                  <p class="text-[12px] font-[400] text-[#6f6f6f]">1 шт</p>
+                  <img src="./svg/icon---.svg" alt="" />
+                </button>
+              </div>
+              <button
+                class="btn w-full p-[12px_0] bg-[#f17e00] rounded-[20px] mt-[10px] text-[16px] font-[400] text-[#fff] hover:bg-[silver] hover:scale-105 hover:text-[#000] hover:font-[700]"
+              >
+                Добавить в корзину
+              </button>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="bg-[#efecec] rounded-[20px]">
+            <img class="w-full" src="./img/Суши-2.png" alt="" />
+            <div class="flex items-center justify-between p-[12px_14px]">
+              <div class="flex gap-5 items-end">
+                <h2 class="text-[24px] font-[700]">6 490 ₽</h2>
+                <p class="line-through text-[#6f6f6f] text-[14px] font-[700]">
+                  7 390 ₽
+                </p>
+              </div>
+              <img src="./svg/likii-1.svg" alt="" />
+            </div>
+            <div class="p-[14px_14px_4px_14px]">
+              <h3 class="text-[16px] font-[600] text-[#111] max-w-[140px]">
+                День Рождения на 5-10 персон
+              </h3>
+              <p
+                class="text-[12px] font-[400] text-[#6f6f6f] max-w-[180px] pt-[5px]"
+              >
+                Отличное готовое решение для Вашего дня рождения, ...
+              </p>
+            </div>
+            <div class="p-[15px_14px_10px_14px]">
+              <div class="flex items-center justify-between">
+                <p>Вес: <span>1095 г</span></p>
+                <button
+                  class="flex items-center p-[3px_5px] rounded-[20px] gap-[6px] border border-solid border-[#f17e00]"
+                >
+                  <p class="text-[12px] font-[400] text-[#6f6f6f]">1 шт</p>
+                  <img src="./svg/icon---.svg" alt="" />
+                </button>
+              </div>
+              <button
+                class="btn w-full p-[12px_0] bg-[#f17e00] rounded-[20px] mt-[10px] text-[16px] font-[400] text-[#fff] hover:bg-[silver] hover:scale-105 hover:text-[#000] hover:font-[700]"
+              >
+                Добавить в корзину
+              </button>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="bg-[#efecec] rounded-[20px]">
+            <img class="w-full" src="./img/Суши-3.png" alt="" />
+            <div class="flex items-center justify-between p-[12px_14px]">
+              <div class="flex gap-5 items-end">
+                <h2 class="text-[24px] font-[700]">6 490 ₽</h2>
+                <p class="line-through text-[#6f6f6f] text-[14px] font-[700]">
+                  7 390 ₽
+                </p>
+              </div>
+              <img src="./svg/likii-1.svg" alt="" />
+            </div>
+            <div class="p-[14px_14px_4px_14px]">
+              <h3 class="text-[16px] font-[600] text-[#111] max-w-[140px]">
+                День Рождения на 5-10 персон
+              </h3>
+              <p
+                class="text-[12px] font-[400] text-[#6f6f6f] max-w-[180px] pt-[5px]"
+              >
+                Отличное готовое решение для Вашего дня рождения, ...
+              </p>
+            </div>
+            <div class="p-[15px_14px_10px_14px]">
+              <div class="flex items-center justify-between">
+                <p>Вес: <span>1095 г</span></p>
+                <button
+                  class="flex items-center p-[3px_5px] rounded-[20px] gap-[6px] border border-solid border-[#f17e00]"
+                >
+                  <p class="text-[12px] font-[400] text-[#6f6f6f]">1 шт</p>
+                  <img src="./svg/icon---.svg" alt="" />
+                </button>
+              </div>
+              <button
+                class="btn w-full p-[12px_0] bg-[#f17e00] rounded-[20px] mt-[10px] text-[16px] font-[400] text-[#fff] hover:bg-[silver] hover:scale-105 hover:text-[#000] hover:font-[700]"
+              >
+                Добавить в корзину
+              </button>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="bg-[#efecec] rounded-[20px] relative">
+            <img class="w-full" src="./img/Суши-4.png" alt="" />
+
+            <div class="flex flex-col absolute top-[14px] right-[15px] gap-3">
+              <img class="w-[41px] h-[41px]" src="./svg/new-4.svg" alt="" />
+              <img class="w-[41px] h-[41px]" src="./svg/new-2.svg" alt="" />
+            </div>
+            <div class="flex items-center justify-between p-[12px_14px]">
+              <div class="flex gap-5 items-end">
+                <h2 class="text-[24px] font-[700]">6 490 ₽</h2>
+                <p class="line-through text-[#6f6f6f] text-[14px] font-[700]">
+                  7 390 ₽
+                </p>
+              </div>
+              <img src="./svg/likii-1.svg" alt="" />
+            </div>
+            <div class="p-[14px_14px_4px_14px]">
+              <h3 class="text-[16px] font-[600] text-[#111] max-w-[140px]">
+                День Рождения на 5-10 персон
+              </h3>
+              <p
+                class="text-[12px] font-[400] text-[#6f6f6f] max-w-[180px] pt-[5px]"
+              >
+                Отличное готовое решение для Вашего дня рождения, ...
+              </p>
+            </div>
+            <div class="p-[15px_14px_10px_14px]">
+              <div class="flex items-center justify-between">
+                <p>Вес: <span>1095 г</span></p>
+                <button
+                  class="flex items-center p-[3px_5px] rounded-[20px] gap-[6px] border border-solid border-[#f17e00]"
+                >
+                  <p class="text-[12px] font-[400] text-[#6f6f6f]">1 шт</p>
+                  <img src="./svg/icon---.svg" alt="" />
+                </button>
+              </div>
+              <button
+                class="btn w-full p-[12px_0] bg-[#f17e00] rounded-[20px] mt-[10px] text-[16px] font-[400] text-[#fff] hover:bg-[silver] hover:scale-105 hover:text-[#000] hover:font-[700]"
+              >
+                Добавить в корзину
+              </button>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="bg-[#efecec] rounded-[20px] relative">
+            <img class="w-full" src="./img/Суши-5.png" alt="" />
+
+            <div class="flex flex-col absolute top-[14px] right-[15px] gap-3">
+              <img src="./svg/naew-5.svg" alt="" />
+              <img class="w-[41px] h-[41px]" src="./svg/new-3.svg" alt="" />
+              <img class="w-[41px] h-[41px]" src="./svg/new-2.svg" alt="" />
+            </div>
+            <div class="flex items-center justify-between p-[12px_14px]">
+              <div class="flex gap-5 items-end">
+                <h2 class="text-[24px] font-[700]">6 490 ₽</h2>
+                <p class="line-through text-[#6f6f6f] text-[14px] font-[700]">
+                  7 390 ₽
+                </p>
+              </div>
+              <img src="./svg/likii-1.svg" alt="" />
+            </div>
+            <div class="p-[14px_14px_4px_14px]">
+              <h3 class="text-[16px] font-[600] text-[#111] max-w-[140px]">
+                День Рождения на 5-10 персон
+              </h3>
+              <p
+                class="text-[12px] font-[400] text-[#6f6f6f] max-w-[180px] pt-[5px]"
+              >
+                Отличное готовое решение для Вашего дня рождения, ...
+              </p>
+            </div>
+            <div class="p-[15px_14px_10px_14px]">
+              <div class="flex items-center justify-between">
+                <p>Вес: <span>1095 г</span></p>
+                <button
+                  class="flex items-center p-[3px_5px] rounded-[20px] gap-[6px] border border-solid border-[#f17e00]"
+                >
+                  <p class="text-[12px] font-[400] text-[#6f6f6f]">1 шт</p>
+                  <img src="./svg/icon---.svg" alt="" />
+                </button>
+              </div>
+              <button
+                class="btn w-full p-[12px_0] bg-[#f17e00] rounded-[20px] mt-[10px] text-[16px] font-[400] text-[#fff] hover:bg-[silver] hover:scale-105 hover:text-[#000] hover:font-[700]"
+              >
+                Добавить в корзину
+              </button>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div class="bg-[#efecec] rounded-[20px] relative">
+            <img class="w-full" src="./img/Суши-1.png" alt="" />
+
+            <div class="flex flex-col absolute top-[14px] right-[15px] gap-3">
+              <img class="w-[41px] h-[41px]" src="./svg/new.svg" alt="" />
+              <img class="w-[41px] h-[41px]" src="./svg/new-2.svg" alt="" />
+            </div>
+            <div class="flex items-center justify-between p-[12px_14px]">
+              <div class="flex gap-5 items-end">
+                <h2 class="text-[24px] font-[700]">6 490 ₽</h2>
+                <p class="line-through text-[#6f6f6f] text-[14px] font-[700]">
+                  7 390 ₽
+                </p>
+              </div>
+              <img src="./svg/likii-1.svg" alt="" />
+            </div>
+            <div class="p-[14px_14px_4px_14px]">
+              <h3 class="text-[16px] font-[600] text-[#111] max-w-[140px]">
+                День Рождения на 5-10 персон
+              </h3>
+              <p
+                class="text-[12px] font-[400] text-[#6f6f6f] max-w-[180px] pt-[5px]"
+              >
+                Отличное готовое решение для Вашего дня рождения, ...
+              </p>
+            </div>
+            <div class="p-[15px_14px_10px_14px]">
+              <div class="flex items-center justify-between">
+                <p>Вес: <span>1095 г</span></p>
+                <button
+                  class="flex items-center p-[3px_5px] rounded-[20px] gap-[6px] border border-solid border-[#f17e00]"
+                >
+                  <p class="text-[12px] font-[400] text-[#6f6f6f]">1 шт</p>
+                  <img src="./svg/icon---.svg" alt="" />
+                </button>
+              </div>
+              <button
+                class="btn w-full p-[12px_0] bg-[#f17e00] rounded-[20px] mt-[10px] text-[16px] font-[400] text-[#fff] hover:bg-[silver] hover:scale-105 hover:text-[#000] hover:font-[700]"
+              >
+                Добавить в корзину
+              </button>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div class="bg-[#efecec] rounded-[20px] relative">
+            <img class="w-full" src="./img/Суши-7.png" alt="" />
+
+            <div class="flex flex-col absolute top-[14px] right-[15px] gap-3">
+              <img class="w-[41px] h-[41px]" src="./svg/new-4.svg" alt="" />
+              <img class="w-[41px] h-[41px]" src="./svg/new-2.svg" alt="" />
+            </div>
+            <div class="flex items-center justify-between p-[12px_14px]">
+              <div class="flex gap-5 items-end">
+                <h2 class="text-[24px] font-[700]">6 490 ₽</h2>
+                <p class="line-through text-[#6f6f6f] text-[14px] font-[700]">
+                  7 390 ₽
+                </p>
+              </div>
+              <img src="./svg/likii-1.svg" alt="" />
+            </div>
+            <div class="p-[14px_14px_4px_14px]">
+              <h3 class="text-[16px] font-[600] text-[#111] max-w-[140px]">
+                День Рождения на 5-10 персон
+              </h3>
+              <p
+                class="text-[12px] font-[400] text-[#6f6f6f] max-w-[180px] pt-[5px]"
+              >
+                Отличное готовое решение для Вашего дня рождения, ...
+              </p>
+            </div>
+            <div class="p-[15px_14px_10px_14px]">
+              <div class="flex items-center justify-between">
+                <p>Вес: <span>1095 г</span></p>
+                <button
+                  class="flex items-center p-[3px_5px] rounded-[20px] gap-[6px] border border-solid border-[#f17e00]"
+                >
+                  <p class="text-[12px] font-[400] text-[#6f6f6f]">1 шт</p>
+                  <img src="./svg/icon---.svg" alt="" />
+                </button>
+              </div>
+              <button
+                class="btn w-full p-[12px_0] bg-[#f17e00] rounded-[20px] mt-[10px] text-[16px] font-[400] text-[#fff] hover:bg-[silver] hover:scale-105 hover:text-[#000] hover:font-[700]"
+              >
+                Добавить в корзину
+              </button>
+            </div>
+          </div>
+          <!-- 9 -->
+          <div class="bg-[#efecec] rounded-[20px] relative">
+            <img class="w-full" src="./img/Суши-2.png" alt="" />
+
+            <div class="flex flex-col absolute top-[14px] right-[15px] gap-3">
+              <img class="w-[41px] h-[41px]" src="./svg/new-2.svg" alt="" />
+
+              <img class="w-[41px] h-[41px]" src="./svg/naew-5.svg" alt="" />
+            </div>
+            <div class="flex items-center justify-between p-[12px_14px]">
+              <div class="flex gap-5 items-end">
+                <h2 class="text-[24px] font-[700]">6 490 ₽</h2>
+                <p class="line-through text-[#6f6f6f] text-[14px] font-[700]">
+                  7 390 ₽
+                </p>
+              </div>
+              <img src="./svg/likii-1.svg" alt="" />
+            </div>
+            <div class="p-[14px_14px_4px_14px]">
+              <h3 class="text-[16px] font-[600] text-[#111] max-w-[140px]">
+                День Рождения на 5-10 персон
+              </h3>
+              <p
+                class="text-[12px] font-[400] text-[#6f6f6f] max-w-[180px] pt-[5px]"
+              >
+                Отличное готовое решение для Вашего дня рождения, ...
+              </p>
+            </div>
+            <div class="p-[15px_14px_10px_14px]">
+              <div class="flex items-center justify-between">
+                <p>Вес: <span>1095 г</span></p>
+                <button
+                  class="flex items-center p-[3px_5px] rounded-[20px] gap-[6px] border border-solid border-[#f17e00]"
+                >
+                  <p class="text-[12px] font-[400] text-[#6f6f6f]">1 шт</p>
+                  <img src="./svg/icon---.svg" alt="" />
+                </button>
+              </div>
+              <button
+                class="btn w-full p-[12px_0] bg-[#f17e00] rounded-[20px] mt-[10px] text-[16px] font-[400] text-[#fff] hover:bg-[silver] hover:scale-105 hover:text-[red] hover:font-[700]"
+              >
+                Добавить в корзину
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+      const swiper = new Swiper(".swiper", {
+        slidesPerView: 7,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 1000,
+        },
+        breakpoints: {
+          200: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          400: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          720: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          1000: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 6,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
